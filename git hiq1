@@ -1,0 +1,91 @@
+					GIT COMMANDS -- All you need to know about getting started with GITHUB .
+
+git init-
+#To initialize a directory and make this Directory accessible by the git commands 
+git status #repos status
+git add  file name  #to change to get committed
+git commit -m "txt"  #(to commit)
+git log #(for getting the logs of commits)
+
+#To sign in to git:
+
+git config --global user.email "youremai1id@mail.com"
+git config user.name "your name"
+git branch branch name
+git branch #(to display)
+git checkout branch name  #(to switch branch)
+git merge branchname  #(to merge)
+git branch -d nameofbranch #(to delete the branch as it is unwanted after commiting the change to master branch)
+
+#Sometimes due to uncomitted changes or commits the normal deletion doesnt work in such case we need to use force delete:
+
+git branch -D nameofbranch 
+
+git push   #(to add changes to the private server of github)
+git remote add origin https://github.com/BALAJIRAO676/hiq_2.git (to create and combine our local and remote repo)
+git push origin master (the branch name to be pushed)
+	  !(name present in remote line)
+To revert and get the state before a commit using commit id:
+git revert <commitid>
+This commit id is found using --> git log
+
+GIT IGNORE: Is a file that allows us to hide files in your repository so that others cant view it:
+1.Create a new document file in the folder of git and name it .gitignore
+Sometimes this file seems to get hidden . Do use ctrl+H to list the hidden .gitignore file.
+2.Now inside the git ignore file type the directory of secret files you need to store and the file names.
+like: /secrets -->Dir name that has to be ignored i.e, everything present inside it .
+      passwords.txt --> we can use this type of writing inside the .gitignore to ignore a document present on  the same dir as that of .gitignore .
+As we see we can hide a dir or a document as perrequirement by writing it inside the .gitignore document.
+Secrets is the name of the directory which is in the same dir of .gitignore
+
+So by doing so the documents and dirs specified in .gitignore doc are ignored and ignored to be comitted and put on the repository
+TO say in one word the git repo on which we commit out dir is not going to have these files .
+
+Now in an other case if you already have a document committed and is on your repository and you need it to be removed and not to be displayed on your repository .
+For this it is neccessary to clear the cache of that particular document as it is presently on our repository so that it can be added to .gitignore document to get ignored from the repository.
+So use :
+git rm --cached filename.txt
+
+Here rm means to remove --cached specifies that cache data of the filename.txt file need to be removed.
+
+Now when you go  to Git Hub  and create your new repository .
+Then we need to connect our repository on Git Hub to the Project folder that we have been making changes on local machine.
+For this we can use :
+git remote add origin <URL of our newly created Git Repository>.git
+
+
+Now to push your commits onto your repository use :
+git push -u origin master
+
+Origin. The conventional name for the primary version of a repository. Git also uses origin as a system alias for pushing and fetching data to and from the primary branch. For example, git push origin master , when run on a remote, will push the changes to the master branch of the primary repository database.
+
+Now if you need to push from an other branch of yours you can use the branch name after origin for ex : git push -u origin branchname
+
+Then you will be asked the Username and password .
+
+Thats all. Now you are done you have pushed the changes you have made to you repository and saved the changes.
+
+Now if you require to make further changes to the pushed docs . 
+You can again use the add statement followed by commit and then push it to the repository .
+That is all you need to do to save the changes to your git repository.
+
+What is a README file ?
+
+Readmde.md file is a instruction file that helps people interested in your project to understand what is your project all about .
+
+In a readme file if you just write # followedbytext  then this is considered as a Heading .
+
+GIT CLONE:
+
+If you need to work or contribute on others projects on GitHub you can clone their repository making a copy of it on your local machine .
+
+use :
+git clone <url given in the repository for cloning>
+
+Or you can also download it in a zip formate as well.
+
+
+
+ 
+
+
