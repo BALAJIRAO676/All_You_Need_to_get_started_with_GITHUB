@@ -1,4 +1,4 @@
-# All_You_Need_to_get_started_with_GITHUB
+#All_You_Need_to_get_started_with_GITHUB
 
 Here I have listed all the commands that are very much necessary for every one to learn about Version-Control System -GIT .
 
